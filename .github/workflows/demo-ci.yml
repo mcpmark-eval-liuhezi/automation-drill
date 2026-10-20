@@ -1,0 +1,14 @@
+name: Demo CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the audience
+        run: echo "Hello, automation drill audience!"
+      - name: Show the working directory
+        run: echo "Working directory is $PWD"
